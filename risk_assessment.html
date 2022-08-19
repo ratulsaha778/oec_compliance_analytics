@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compliance Analytics - Risk Assessment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.3.1/d3-annotation.min.js"></script>
+
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+</head>
+<body>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title" align=center><strong><a href="#collapse1" data-toggle="collapse">
+		Welcome to Compliance Analytics - the next generation analytics platform strategised on Risk Assessment
+		</a></strong></h3>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse hidden">
+        <div class="panel-body">
+		<p align=left>
+		The Office of Ethics and Compliance (OEC) Global Operations team has primary responsibility for developing, implementing and maintaining global compliance solutions to assist the organization in maintaining a best-in-class Compliance Program, that supports risk-based analytics and prioritization, supporting employees to conduct business with integrity and in adherence to the laws and regulations wherever AbbVie conducts business.
+		<br><br>
+			
+		</div>
+    </div>
+</div>
+
+<div class="move">
+<center>
+<p>Use the navigation buttons below to explore the offerings from Compliance Analytics platform.</p>
+<a href="country_dashboards.html" class="previous">&laquo;</a>
+<a href="index.html" class="otherpage">Home</a>
+<a href="country_dashboards.html" class="otherpage">Country Dashboards</a>
+<a href="#" class="currentpage">Risk Assessment</a>
+<a href="metrics.html" class="otherpage">Metrics and Reporting</a>
+<a href="info.html" class="otherpage">Documents, Contacts, News</a>
+<a href="metrics.html" class="next">&raquo;</a>
+</center> 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div>
+<hr>
+<div>
+		The Compliance Analytics Program is a global initiative to implement an analytics-based approach to strategically identify, review and mitigate Compliance risk and support the elements of a comprehensive Compliance program.  
+		<br><br>
+		The Compliance Analytics Dashboard is a data-driven, analytics-enabled platform which allows the ability to: 
+		<li>Focus and prioritize risk on a local, regional and global level</li>
+		<li>Quickly and more easily measure compliance with guidance and principles</li>
+		<li>Measure the impact of Compliance initiatives, such as new policies and training</li>
+		<li>Achieve broader coverage by considering 100% of available data in selected risk areas across employees, healthcare professionals and third parties</li>
+		<li>Incorporate data sources not typically associated with transactional data to better inform local, regional and global risk profile and business decisions</li>
+		<br><br>
+		With the integration of Legacy Allergan with AbbVie systems and technologies, the team has undertaken harmonization efforts to consolidate analytics programs, including the systems and technology that currently support the legacy companies’ Compliance programs. In order to test the harmonized approach, the team has defined a set or workstreams to support a Proof of Concept (POC) to demonstrate how systems can be consolidated and enhanced in order to support the best-of-both approach that enables a risk-oriented analytics program.
+		</p>
+</div>
+<div>
+	<table border =0 cellpadding=5 cellspacing=5 width=80% align=center>
+	<tr><td colspan=2>Compliance Analytics consists of 3 main category of dashboards:<br>
+	<li>Country Level Dashboards: consists of xx country level finance and compliance reports</li>
+	<li>Risk Assessment Dashboards: consists of business facing <i>"Risk Assessment Landscape Dashboard"</i> and OEC facing <i>"Risk Assessment Operations Dashboard"</i></li>
+	<li>Metrics and Reporting Dashboards: consists of business facing <i>"Metrics and Reporting Dashboard"</i> and OEC facing <i>"Metrics and Reporting Dashboard"</i></li>
+	</td></tr>
+	<tr>
+	<td border =1>
+	<!-content section->
+		<table border =0 cellpadding=3 cellspacing=3 width=100% align=center>
+		<tr>
+		<td width=30% align=top><img src='image0.jpg' width=100% border=0></td>
+		<td width=5% align=top>&nbsp;</td>
+		<td width=30% align=top><img src='image1.png' width=100% border=0></td>
+		<td width=5% align=top>&nbsp;</td>
+		<td width=30% align=top><img src='image2.png' width=100% border=0></td>
+		</tr>
+		
+		<tr>
+		<td width=30% align=top>Country Level Dashboards related details go here</td>
+		<td width=5% align=top>&nbsp;</td>
+		<td width=30% align=top>Risk Assessment Dashboards related details go here</td>
+		<td width=5% align=top>&nbsp;</td>
+		<td width=30% align=top>Metrics and Reporting Dashboards related details go here</td>
+		</tr>
+		</table>
+	
+	</td>
+
+	</tr>
+	</table>
+</div>
+<hr>
+<div>
+<p align=center>Contact: OEC at AbbVie</p>
+</div>
+
+<script>
+        document.addEventListener('DOMContentLoaded',function() {
+            var expandLinks = document.querySelectorAll('.panel-heading .panel-title a ');
+
+            for(var i = 0; i < expandLinks.length; i++) {
+                expandLinks[i].addEventListener('click', function(event) {
+                    console.log(event.currentTarget);
+                    var selector = event.currentTarget.getAttribute("href");
+                    var answersDiv = document.querySelector(selector);
+                    answersDiv.classList.toggle('hidden');
+                });
+            }
+        });
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+</body>
+</html> 
