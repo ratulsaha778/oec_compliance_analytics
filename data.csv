@@ -1,8 +1,8 @@
 id,parentId,size
-cars,
-owned,cars
-traded,cars
-learned,cars
+cars,,
+owned,cars,
+traded,cars,
+learned,cars,
 pilot,owned,40
 325ci,owned,40
 accord,owned,20
