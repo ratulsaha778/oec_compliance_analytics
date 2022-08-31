@@ -178,3 +178,10 @@ th {
   border-left: 2px solid black;
   height: 375px;
 }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

@@ -1,5 +1,6 @@
-Response,Aesthetics,Pharmaceuticals
-Needs Further Discussion To Be Able To Respond,9,14
-No - Activity Does Not Occur In Affiliate,58,7
-Select a Response,20,46
-Yes - Activity Occurs In Affiliate,144,197
+Response,Aesthetics,Pharmaceuticals,N
+Needs Further Discussion To Be Able To Respond,9,14,23
+No - Activity Does Not Occur In Affiliate,58,7,65
+Select a Response,20,46,66
+Yes - Activity Occurs In Affiliate,144,197,341
+Total,231,264,495
